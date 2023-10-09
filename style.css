@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Tourney:ital,wght@1,200&display=swap");
+
+* {
+  font-family: sans-serif;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0;
+  width: 100%;
+}
+
+.titulo {
+  font-family: "Tourney", cursive;
+  font-size: 64px;
+  color: white;
+  max-width: 600px;
+  align-items: center;
+  text-align: center;
+}
+body {
+  background-color: #18181b;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.logo {
+  max-width: 600px;
+  margin-bottom: 1.5em;
+}
+
+.container__input {
+  max-width: 480px;
+  margin: 14px 0;
+}
+
+.container__input span {
+  color: white;
+  font-size: 1.5em;
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  border-radius: 5px;
+  background: white;
+  height: 1em;
+  outline: none;
+  margin-top: 0.5em;
+}
+
+.button__cta {
+  height: 40px;
+  background-color: #ee9016;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 40px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.container__password {
+  max-width: 480px;
+  margin: 14px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.title {
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.password {
+  height: 60px;
+  background-color: rgba(0, 0, 0 0.4);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: 1px solid #313131;
+  transition: transform 0.5s;
+}
+
+.password:hover {
+  transform: scale(1.05);
+}
+
+.tooltip {
+  color: white;
+  position: relative;
+  top: 20px;
+  padding: 6px 8px;
+  background: rgb (15, 15, 15);
+  text-align: center;
+  font-size: 16px;
+  border-radius: 6px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.hide {
+  display: none;
+}
+
+.container__password:hover .tooltip {
+  visibility: visible;
+  bottom: 50px;
+  opacity: 1;
+}
